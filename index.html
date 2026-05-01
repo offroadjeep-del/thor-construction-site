@@ -103,13 +103,12 @@
   .hero-bg {
     position: absolute; inset: 0;
     background-image:
-      linear-gradient(rgba(14,14,14,0.65), rgba(14,14,14,0.85)),
+      linear-gradient(rgba(14,14,14,0.45), rgba(14,14,14,0.75)),
       url('hero.jpg');
     background-size: cover; background-position: center;
     z-index: 1;
   }
   .hero::after {
-    /* gold diagonal slash from your truck wraps */
     content: '';
     position: absolute; top: 0; right: -8%;
     width: 35%; height: 100%;
@@ -265,7 +264,7 @@
     .services-grid { grid-template-columns: 1fr; }
   }
 
-  /* ========== WHY ROWS (alternating) ========== */
+  /* ========== WHY ROWS ========== */
   .why-section { padding: 5rem 0; }
   .why-row {
     display: grid;
@@ -304,7 +303,7 @@
     .why-row.reverse > div:first-child { order: 0; }
   }
 
-  /* ========== MANIFESTO BAND ========== */
+  /* ========== MANIFESTO ========== */
   .manifesto {
     background: var(--ink);
     color: var(--bone);
@@ -342,7 +341,7 @@
   }
   .manifesto p:last-of-type { margin-bottom: 0; }
 
-  /* ========== MODELS / CATALOG CARD ========== */
+  /* ========== CATALOG CARD ========== */
   .catalog-section { background: var(--bone); }
   .catalog-card {
     background: var(--ink);
@@ -577,10 +576,8 @@
 </head>
 <body>
 
-<!-- ANNOUNCE -->
 <div class="announce">Now Booking Pinellas County Builds · Free Property Analysis</div>
 
-<!-- NAV -->
 <nav class="main">
   <div class="container nav-inner">
     <a href="#" class="nav-logo"><img src="logo.png" alt="Thor Construction" /></a>
@@ -596,7 +593,6 @@
   </div>
 </nav>
 
-<!-- HERO -->
 <header class="hero">
   <div class="hero-bg"></div>
   <div class="container hero-content">
@@ -628,7 +624,6 @@
   </div>
 </header>
 
-<!-- SERVICES -->
 <section id="services">
   <div class="container">
     <div class="section-head">
@@ -644,7 +639,7 @@
         </div>
         <div class="service-body">
           <h3>Backyard ADUs</h3>
-          <p>Detached units sized for rental income, in-law suites, guest houses, or pool houses. Three signature models or fully custom.</p>
+          <p>Detached units sized for rental income, in-law suites, guest houses, or pool houses. Fully custom, built around your lot and your needs.</p>
           <a href="#models" class="service-link">Learn More →</a>
         </div>
       </article>
@@ -685,7 +680,6 @@
   </div>
 </section>
 
-<!-- MANIFESTO -->
 <section class="manifesto">
   <div class="container manifesto-inner">
     <h2>A family name<br/>on every <span>project.</span></h2>
@@ -693,7 +687,6 @@
   </div>
 </section>
 
-<!-- WHY ROWS -->
 <section class="why-section" id="why">
   <div class="container">
 
@@ -736,25 +729,23 @@
   </div>
 </section>
 
-<!-- CATALOG / MODELS -->
 <section class="catalog-section" id="models">
   <div class="container">
     <div class="catalog-card">
       <div class="catalog-img"></div>
       <div class="catalog-body">
-        <div class="tag">/ ADU MODELS</div>
-        <h2>Three signature models.<br/>Norse names. Florida built.</h2>
-        <p>From the compact <strong style="color:var(--gold)">Freyja</strong> (384 sq ft) to the flagship <strong style="color:var(--gold)">Odin</strong> (1,000+ sq ft), every Thor ADU comes standard with quartz counters, custom cabinetry, luxury vinyl flooring, and a tile shower. Or go fully custom and we'll design around your lot.</p>
+        <div class="tag">/ FULLY CUSTOM ADUS</div>
+        <h2>Built around your lot,<br/>your needs, your budget.</h2>
+        <p>Every Thor ADU is fully custom. We design and build to fit your specific property and goals, with concrete block construction (built to Florida hurricane code), quartz counters, custom cabinetry, luxury vinyl flooring, and a tile shower included. Sketch us your dream backyard cottage, in-law suite, or rental unit. We'll make it work.</p>
         <div class="catalog-actions">
           <a href="#estimate" class="btn btn-primary" style="background:var(--gold);color:var(--ink);border-color:var(--gold);">Get Free Estimate</a>
-          <a href="#estimate" class="btn btn-outline">Request Catalog</a>
+          <a href="mailto:matt@buildwiththor.com" class="btn btn-outline">Email Us</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PROCESS -->
 <section class="process" id="process">
   <div class="container">
     <div class="section-head">
@@ -777,7 +768,7 @@
       <div class="step">
         <div class="num">02</div>
         <h4>Design &amp; Estimate</h4>
-        <p>Pick a model or go custom. You get a firm written estimate before any contract.</p>
+        <p>We design around your needs and lot. You get a firm written estimate before any contract.</p>
       </div>
       <div class="step">
         <div class="num">03</div>
@@ -793,7 +784,6 @@
   </div>
 </section>
 
-<!-- CTA BAND -->
 <section class="cta-band" id="estimate">
   <div class="container">
     <h2>Ready to get started?</h2>
@@ -805,7 +795,6 @@
   </div>
 </section>
 
-<!-- FAQ -->
 <section id="faq">
   <div class="container">
     <div class="section-head">
@@ -820,7 +809,7 @@
       </div>
       <div class="faq-item">
         <button class="faq-q"><span>What can I customize?</span><span class="icon">+</span></button>
-        <div class="faq-a"><div style="padding-top:0.4rem;">Because our ADUs are stick-built on-site, we can customize our base models or design from scratch. Floor plans, room sizes, kitchen fixtures, finishes are all up to you. Most Pinellas municipalities require the exterior to match your primary home for permitting.</div></div>
+        <div class="faq-a"><div style="padding-top:0.4rem;">Because our ADUs are built on-site from concrete block, every one is fully custom. Floor plans, room sizes, kitchen fixtures, finishes are all up to you. Most Pinellas municipalities require the exterior to match your primary home for permitting.</div></div>
       </div>
       <div class="faq-item">
         <button class="faq-q"><span>What features come standard?</span><span class="icon">+</span></button>
@@ -832,7 +821,7 @@
       </div>
       <div class="faq-item">
         <button class="faq-q"><span>Are Thor ADUs prefab or built on-site?</span><span class="icon">+</span></button>
-        <div class="faq-a"><div style="padding-top:0.4rem;">All Thor ADUs are stick-built on your property, which almost eliminates access issues that prevent some homeowners from building. Stick-built ADUs also yield better quality, last longer, and add more value to your home compared to prefab.</div></div>
+        <div class="faq-a"><div style="padding-top:0.4rem;">All Thor ADUs are built on your property from concrete block, the same construction we use for primary homes in Florida. Concrete block is engineered for hurricane resistance, lasts longer than wood-frame, and adds more value to your property compared to prefab. No craning, no transport fees, just solid construction from the ground up.</div></div>
       </div>
       <div class="faq-item">
         <button class="faq-q"><span>Are ADUs built on a foundation?</span><span class="icon">+</span></button>
@@ -852,7 +841,7 @@
       </div>
       <div class="faq-item">
         <button class="faq-q"><span>How much space do I need?</span><span class="icon">+</span></button>
-        <div class="faq-a"><div style="padding-top:0.4rem;">Our smallest standard ADU (Freyja) is 384 sq ft. With standard setbacks, you typically need about 25' x 30' of clear backyard space to build a Thor ADU. Larger lots open up bigger options like Bjorn, Odin, or fully custom.</div></div>
+        <div class="faq-a"><div style="padding-top:0.4rem;">Most ADUs start around 384 sq ft. With standard setbacks, you typically need about 25' x 30' of clear backyard space to build an ADU. Larger lots open up bigger options, and we'll design fully custom around whatever space you have.</div></div>
       </div>
       <div class="faq-item">
         <button class="faq-q"><span>Are your prices all-inclusive?</span><span class="icon">+</span></button>
@@ -866,7 +855,6 @@
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <div class="container">
     <div class="foot-top">
